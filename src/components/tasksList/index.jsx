@@ -6,6 +6,7 @@ import DialogForm from "../dialog";
 import MyContext from "../../context/context";
 import SnackBar from "../SnackBar";
 import { styles } from "./styleTaskList";
+import _ from "lodash";
 
 
 
@@ -36,7 +37,7 @@ class TaksList extends Component {
                 </div>
                 {/*tarefa*/}
                     <Grid className={classes.taskList} container spacing={24} >
-                      {tasks.map((task)=> (
+                      {_.map(tasks,(task)=> (
                         <Task key={task.id} 
                          title={task.title} 
                          subtitle={task.subtitle} 
