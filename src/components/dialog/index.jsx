@@ -1,9 +1,8 @@
-import { Button, DialogActions, DialogContent, DialogTitle, TextField, withStyles } from '@material-ui/core';
+import { Button, DialogActions, DialogContent, DialogTitle, withStyles } from '@material-ui/core';
 import Dialog from '@material-ui/core/Dialog';
 import React, { Component } from 'react';
 import ModalForm from '../modalForm';
 import MyContext from '../../context/context';
-import SnackBar from '../SnackBar';
 import { styles } from './stylesDialog';
 
 
@@ -22,7 +21,7 @@ class DialogForm extends Component {
     };
     handleAddTask = (event) => {
         event.preventDefault();
-        const { addTask, state } = this.context;
+        const { addTask} = this.context;
         
         addTask();
         

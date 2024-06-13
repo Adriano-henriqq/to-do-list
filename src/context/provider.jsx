@@ -41,7 +41,7 @@ class MyProvider extends Component {
   }
 
   addTask = () => {
-    moment.locale('pt-br');
+    moment.locale('pt-BR');
     const { title, descricao, criadaPor, texto, prioridade, concluido } = this.state;
     const newTask = { title, subtitle: descricao, criado_em: moment().format('YYYY-MM-DD HH:mm:ss'), criado_por: criadaPor, texto, prioridade: Number(prioridade), concluido };
 

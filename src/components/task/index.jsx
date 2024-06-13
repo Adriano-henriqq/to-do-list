@@ -108,7 +108,7 @@ class Task extends Component {
                     </div>
                     <hr />
                     <div className={classes.taskFooter}>
-                        <Typography className={classes.itemFooter} variant="body2"><CalendarToday /> Criada em: {moment(criadaEm).locale('pt-br').format('DD/MM/YYYY HH:mm:ss')}</Typography>
+                        <Typography className={classes.itemFooter} variant="body2"><CalendarToday /> Criada em: {moment(criadaEm).format('DD/MM/YYYY HH:mm:ss')}</Typography>
                         <DeleteIcon onClick={this.handleDelete} color="error" cursor={'pointer'} />
                     </div>
                 </Paper>

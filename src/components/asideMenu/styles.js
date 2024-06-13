@@ -9,6 +9,7 @@ export const styles = (theme) => ({
         height: '100vh',
         boxSizing: 'border-box',
         borderRadius: '0',
+        zIndex: 1000,
 
         [theme.breakpoints.down('sm')]: {
             position: 'fixed',

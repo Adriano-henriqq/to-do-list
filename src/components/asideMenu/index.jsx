@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { List, ListItem, Paper, Typography, withStyles,} from '@material-ui/core';
 import Done from '@material-ui/icons/Done';
 import Assignment from '@material-ui/icons/Assignment';
-import Assessment from '@material-ui/icons/Assessment';
 import MenuIcon from '@material-ui/icons/Menu';
 import { styles } from './styles';
 

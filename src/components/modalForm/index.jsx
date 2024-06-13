@@ -16,7 +16,7 @@ class ModalForm extends Component {
         const { handleChange, state } = this.context;
         const { errors } = state;
 
-        const { classes,children, error } = this.props
+        const { classes,children} = this.props
         return (
             <form className={classes.containerForm}>
 

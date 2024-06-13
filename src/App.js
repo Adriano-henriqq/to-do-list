@@ -3,31 +3,38 @@ import React, { Component } from 'react';
 import AsideMenu from './components/asideMenu';
 import TaksList from './components/tasksList';
 import withStyles from '@material-ui/styles/withStyles';
+import NavBar from './components/NavBar';
 
 
-const styles = (theme)=> ({
+const styles = {
   container: {
     display: 'flex',
     height: '100%',
   },
   main: {
     width: '100%',
-  }
-
+    
+  },
+ nav:{
+   padding: '0 0 10px 0'
+ }
   
-})
+}
 
-class App extends React.Component {
+class App extends Component {
   render() {
-   const {classes} = this.props 
-   console.log(this.state)
   return (
-    <div className={classes.container}>
+    <div>
+    <div style={styles.container}>
      <AsideMenu/>
-     <main className={classes.main}>
+     <main style={styles.main}>
+     <nav style={styles.nav}> 
+      <NavBar/>
+      </nav> 
       <TaksList />
      </main>
     </div>
+    </div> 
   );
  }
 }
